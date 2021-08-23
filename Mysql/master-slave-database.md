@@ -1,4 +1,4 @@
-# Membuat database slave pada MYSQL
+# Membuat database slave pada MYSQL/MariaDB
 
 Server dalam contoh ini memiliki IP berikut:
 
@@ -14,13 +14,13 @@ Jika belum bisa klik link instalasi berikut: \
 
 ## Konfigurasikan Master Server
 
-Pertama, kita akan mengkonfigurasi server MySQL master dan membuat perubahan berikut:
+Pertama, kita akan mengkonfigurasi server database master dan membuat perubahan berikut:
 
-* Atur server MySQL untuk listen pada private IP
+* Atur server database untuk listen pada private IP
 * Tetapkan ID server yang unik
 * Aktifkan binary logging
 
-Untuk melakukannya buka file konfigurasi MySQL dan tambahkan baris berikut di bagian [mysqld]:
+Untuk melakukannya buka file konfigurasi database dan tambahkan baris berikut di bagian [mysqld]:
 
 ```html
 sudo nano /etc/my.cnf
@@ -35,7 +35,7 @@ server-id = 1
 log_bin = mysql-bin
 ```
 
-Setelah selesai, restart layanan MySQL agar perubahan diterapkan. \
+Setelah selesai, restart layanan database agar perubahan diterapkan. \
 Pada MYSQL :
 
 ```html
