@@ -1,5 +1,7 @@
 # Membuat database slave pada MYSQL/MariaDB
 
+Note: jika perintah memerluka akses root silakan tambahkan "sudo" diawal comand
+
 Server dalam contoh ini memiliki IP berikut:
 
 ```html
@@ -23,7 +25,7 @@ Pertama, kita akan mengkonfigurasi server database master dan membuat perubahan 
 Untuk melakukannya buka file konfigurasi database dan tambahkan baris berikut di bagian [mysqld]:
 
 ```html
-sudo nano /etc/my.cnf
+nano /etc/my.cnf
 ```
 
 konfigurasi /etc/my.cnf untuk server master sebagai berikut :
@@ -93,7 +95,7 @@ Seperti untuk server master di atas, kita juga akan membuat perubahan berikut ke
 Buka file konfigurasi MySQL dan edit baris berikut :
 
 ```html
-sudo nano /etc/my.cnf
+nano /etc/my.cnf
 ```
 
 konfigurasi /etc/my.cnf untuk server master sebagai berikut :
