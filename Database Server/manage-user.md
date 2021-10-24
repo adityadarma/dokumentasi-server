@@ -1,5 +1,11 @@
 # Manage User pada MYSQL/MariaDB
 
+Masuk terlebih dahulu sebagai root
+
+```html
+mysql -u root -p
+```
+
 ## Create a new Database
 
 Membuat database jika belum ada.
